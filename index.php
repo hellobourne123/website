@@ -13,6 +13,6 @@ $result4 = shell_exec('chmod a+rwx mount');
 
 echo '<a href="mount"> index of </a>';
 echo '<br>';
-echo '< href="test/test"> test </a> <br>';
+echo '<a href="test/test"> test </a> <br>';
  echo 'hello';
 ?>
