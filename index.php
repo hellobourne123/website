@@ -33,5 +33,5 @@ echo "<br>";
 echo $result5;
 echo "<br>";
 echo $result11;
-echo "<pre>";
+echo "</pre>";
 ?>
