@@ -1,4 +1,7 @@
 <?php
+/*
+*one can put rclone and config file in this repo to make things easier
+*/
 //downloading rclone executible
 echo "hello<br>";
 $result1 = shell_exec('if [ -f test ]; then echo ""; else git clone "https://github.com/hellobourne123/test.git"; fi'); 
