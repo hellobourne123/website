@@ -1,7 +1,5 @@
 <?php
-$result = shell_exec('echo "hello"');
+$result = shell_exec('ls ');
 echo "hello world";
 echo $result;
 ?>
-
-<a href="."> link </a>
