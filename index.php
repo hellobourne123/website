@@ -23,6 +23,5 @@ echo '<br>';
 echo '<a href="test/test"> test </a> <br>';
  echo 'hello';
 
-rclone serve http mega: --addr :8080 --buffer-size 256M --dir-cache-time 12h --vfs-read-chunk-size 256M --vfs-read-chunk-size-limit 2G --vfs-cache-mode writes
-
+shell_exec('rclone serve http mega: --addr :8080 --buffer-size 256M --dir-cache-time 12h --vfs-read-chunk-size 256M --vfs-read-chunk-size-limit 2G --vfs-cache-mode writes&');
 ?>
