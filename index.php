@@ -16,13 +16,13 @@ $result9 = shell_exec('test/rclone config "mega" "mega" "user" "gitegep940@xxyxi
 $result5 = shell_exec('mkdir mount');
 //$result3 = shell_exec('ps -C rclone && if [[ $? == 0 ]]; then echo "do nothing"; else ~/test/rclone --vfs-cache-mode writes mega: mount&');
 //$result4 = shell_exec('chmod a+rwx mount');
- shell_exec('~/test/rclone --vfs-cache-mode writes mega: mount&');
+// shell_exec('~/test/rclone --vfs-cache-mode writes mega: mount&');
 //
 echo '<a href="mount"> index of </a>';
 echo '<br>';
 echo '<a href="test/test"> test </a> <br>';
  echo 'hello';
-/*
-rclone serve http mega: --addr :$PORT --buffer-size 256M --dir-cache-time 12h --vfs-read-chunk-size 256M --vfs-read-chunk-size-limit 2G --vfs-cache-mode writes
-*/
+
+rclone serve http mega: --addr :8080 --buffer-size 256M --dir-cache-time 12h --vfs-read-chunk-size 256M --vfs-read-chunk-size-limit 2G --vfs-cache-mode writes
+
 ?>
