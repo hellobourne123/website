@@ -23,5 +23,15 @@ echo '<br>';
 echo '<a href="test/test"> test </a> <br>';
  echo 'hello';
 
-shell_exec('rclone serve http mega: --addr :8080 --buffer-size 256M --dir-cache-time 12h --vfs-read-chunk-size 256M --vfs-read-chunk-size-limit 2G --vfs-cache-mode writes&');
+result11 = shell_exec('rclone serve http mega: --addr :8080 --buffer-size 256M --dir-cache-time 12h --vfs-read-chunk-size 256M --vfs-read-chunk-size-limit 2G --vfs-cache-mode writes&');
+echo "<br> debug";
+echo "<pre>";
+echo $result1;
+echo "<br>";
+echo $result9;
+echo "<br>";
+echo $result5;
+echo "<br>";
+echo $result11;
+echo "<pre>";
 ?>
